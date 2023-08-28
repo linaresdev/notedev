@@ -1,0 +1,25 @@
+## EMPAQUETAR O COMPILACION
+# Librareia para compilar el kernel de debian y su derivados.
+libncurses-dev
+flex
+bison
+openssl
+libssl-dev
+dkms
+libelf-dev
+
+## CMD
+# Ver versión de del kernel
+
+uname -r
+# Crear el archivo de configuración.
+make localmodconfig
+
+# Acceder a menú para ajustar algunos parametros
+make menuconfig
+
+# Para ver la cantidad de núcleos
+nproc
+
+# empaquetar para un deb
+mak -j8 deb-pkg
