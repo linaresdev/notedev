@@ -15,3 +15,7 @@ sudo lsof +D {path}
 
 ## LISTAR ARCHIVOS ABIERTOS BAJO PROTOCOLO TCP.
 lsof -i
+
+## VER RUTAS O UBICACIONES DE LOS ARCHIVOS DE UN COMANDO
+which -a ls
+whereis -b ls
