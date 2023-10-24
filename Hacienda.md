@@ -9,35 +9,29 @@ Mis Anotaciones de desarrollo
 
 ### Auth - Autenticacion
 
-```php	
-	Hacienda::auth($authUrl); // callback JSON
+```php
+Hacienda::auth($authUrl); // callback JSON
 
-	/*
-	* Repuesta
-	* {
-	*  "token": "string",
-	*  "expira": "2023-10-24T19:23:31.594Z",
-	*  "expedido": "2023-10-24T19:23:31.594Z"
-	* }
-	*/
+/*
+* Repuesta
+* {
+*  "token": "string",
+*  "expira": "2023-10-24T19:23:31.594Z",
+*  "expedido": "2023-10-24T19:23:31.594Z"
+* }
+*/
+
 ```
 
 ### Issue - Emisión
-
-Url de prueba para la emision de conprobantes
+<p>Url de prueba para la emision de conprobantes</p>
 ` POST | 'https://ecf.dgii.gov.do/testecf/emisorreceptor/api/Emision/EmisionComprobantes'`
 
 ```php
-
-Hacienda::issue($issueUrl);
-
-/*
-* Campos
-* {
-*  "rnc": "string",
-*  "tipoEncf": "string",
-*  "urlRecepcion": "string",
-*  "urlAutenticacion": "string"
-* }
-*/
+Hacienda::issue($issueUrl)->form([
+	"rnc" => "string",
+	"tipoEncf" => "string",
+	"urlRecepcion" => "string",
+	"urlAutenticacion" => "string"
+]);
 ```
