@@ -8,6 +8,7 @@ Mis Anotaciones de desarrollo
 - Consult
 
 ### Auth - Autenticacion
+
 ```php	
 	Hacienda::auth($authUrl); // callback JSON
 
@@ -20,7 +21,9 @@ Mis Anotaciones de desarrollo
 	* }
 	*/
 ```
+
 ### Issue - Emisión
+
 Url de prueba para la emision de conprobantes
 ` POST | 'https://ecf.dgii.gov.do/testecf/emisorreceptor/api/Emision/EmisionComprobantes'`
 
@@ -29,16 +32,12 @@ Url de prueba para la emision de conprobantes
 Hacienda::issue($issueUrl);
 
 /*
-* REPUESTA
-* curl -X 'POST' \
-*  'https://ecf.dgii.gov.do/testecf/emisorreceptor/api/Emision/EmisionComprobantes' \
-*  -H 'accept: */*' \
-*  -H 'Content-Type: application/json-patch+json' \
-*  -d '{
+* Campos
+* {
 *  "rnc": "string",
 *  "tipoEncf": "string",
 *  "urlRecepcion": "string",
 *  "urlAutenticacion": "string"
-* }'
+* }
 */
 ```
