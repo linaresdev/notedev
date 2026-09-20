@@ -1,7 +1,7 @@
 ## Notas de ingenieria
-<p> Progrmas y aplicaciones importantes </p>
+<p> Programas y aplicaciones importantes </p>
 
-### Para modelado en 3D
+### Para modelados en 3D
 ```
   https://ingetrazo.com
 ```
